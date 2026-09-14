@@ -1632,6 +1632,613 @@
             transform: scale(0.95);
         }
 
+    
+        /* ════════════════════════════════════════════════════════════════════
+           MAQUINAS PRO EVOLUTION STYLES
+           ════════════════════════════════════════════════════════════════════ */
+        .evolution-pill-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: linear-gradient(135deg, #f5a623 0%, #d97706 100%);
+            color: #111;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 20px;
+            box-shadow: 0 2px 10px rgba(245, 166, 35, 0.4);
+            margin-left: 10px;
+            vertical-align: middle;
+        }
+
+        .btn-nav-gate {
+            background: linear-gradient(135deg, #f5a623 0%, #e69500 100%) !important;
+            color: #111 !important;
+            font-weight: 700 !important;
+            border-radius: 6px;
+            padding: 8px 16px !important;
+            box-shadow: 0 4px 14px rgba(245, 166, 35, 0.35);
+            transition: all 0.25s ease;
+        }
+        .btn-nav-gate:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(245, 166, 35, 0.5);
+        }
+
+        /* ── SECCIÓN BOLSA DE USADOS & TRADE-IN ── */
+        .bolsa-section {
+            padding: 90px 20px;
+            background: linear-gradient(180deg, #121316 0%, #16181d 50%, #121316 100%);
+            border-top: 1px solid rgba(245, 166, 35, 0.15);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            position: relative;
+        }
+        .bolsa-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        @media (max-width: 900px) {
+            .bolsa-grid { grid-template-columns: 1fr; }
+        }
+        .bolsa-card {
+            background: #1a1c22;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 14px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+        }
+        .bolsa-card:hover {
+            border-color: rgba(245, 166, 35, 0.4);
+            transform: translateY(-4px);
+        }
+        .bolsa-card-img {
+            position: relative;
+            width: 100%;
+            height: 280px;
+            background: #0d0e11;
+        }
+        .bolsa-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .bolsa-status-badge {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            background: #10b981;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 6px;
+            letter-spacing: 0.5px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        .bolsa-city-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(0,0,0,0.75);
+            backdrop-filter: blur(6px);
+            color: #f5a623;
+            font-size: 0.75rem;
+            font-weight: 700;
+            padding: 5px 12px;
+            border-radius: 6px;
+            border: 1px solid rgba(245, 166, 35, 0.3);
+        }
+        .bolsa-card-body {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .bolsa-card-brand {
+            font-size: 0.75rem;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #f5a623;
+            margin-bottom: 6px;
+        }
+        .bolsa-card-title {
+            font-size: 1.35rem;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 12px;
+        }
+        .bolsa-specs-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            color: #cbd5e1;
+            font-size: 0.85rem;
+        }
+        .bolsa-specs-row span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .bolsa-specs-row i {
+            color: #f5a623;
+        }
+        .bolsa-desc {
+            color: #94a3b8;
+            font-size: 0.9rem;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .bolsa-card-footer {
+            display: flex;
+            gap: 12px;
+        }
+        .bolsa-card-footer .btn {
+            flex: 1;
+            padding: 10px 14px;
+            font-size: 0.88rem;
+            text-align: center;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .btn-outline-gold {
+            background: transparent;
+            border: 1px solid rgba(245, 166, 35, 0.5);
+            color: #f5a623;
+        }
+        .btn-outline-gold:hover {
+            background: rgba(245, 166, 35, 0.1);
+            color: #fff;
+        }
+
+        /* Trade-in Card */
+        .trade-in-card {
+            background: radial-gradient(circle at top right, #252319 0%, #17181c 70%);
+            border: 2px solid rgba(245, 166, 35, 0.35);
+            border-radius: 14px;
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            position: relative;
+        }
+        .trade-in-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 166, 35, 0.15);
+            border: 1px solid rgba(245, 166, 35, 0.4);
+            color: #f5a623;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            width: fit-content;
+            margin-bottom: 16px;
+        }
+        .trade-in-title {
+            font-size: 1.6rem;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 14px;
+            line-height: 1.25;
+        }
+        .trade-in-desc {
+            color: #cbd5e1;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .trade-in-features {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 26px 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .trade-in-features li {
+            color: #e2e8f0;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .trade-in-features i {
+            color: #f5a623;
+            margin-top: 3px;
+        }
+        .btn-tradein {
+            background: linear-gradient(135deg, #f5a623 0%, #d97706 100%);
+            color: #111;
+            font-weight: 800;
+            padding: 14px 24px;
+            border-radius: 8px;
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(245, 166, 35, 0.4);
+            transition: all 0.25s ease;
+        }
+        .btn-tradein:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 166, 35, 0.6);
+        }
+
+        /* ── SECCIÓN GREMIOS & FINAGRO ── */
+        .gremios-section {
+            padding: 90px 20px;
+            background: #111215;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .gremios-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            max-width: 1200px;
+            margin: 40px auto 0;
+        }
+        @media (max-width: 990px) {
+            .gremios-grid { grid-template-columns: 1fr; }
+        }
+        .gremio-card {
+            background: #17191e;
+            border: 1px solid rgba(255, 255, 255, 0.07);
+            border-radius: 12px;
+            padding: 28px;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+        }
+        .gremio-card:hover {
+            border-color: rgba(245, 166, 35, 0.3);
+            transform: translateY(-4px);
+        }
+        .gremio-card.highlight-card {
+            background: linear-gradient(180deg, #1d1b14 0%, #17191e 100%);
+            border: 1px solid rgba(245, 166, 35, 0.45);
+        }
+        .gremio-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+        .gremio-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #f5a623;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            flex-shrink: 0;
+        }
+        .gremio-icon.gold-icon {
+            background: rgba(245, 166, 35, 0.15);
+            border-color: rgba(245, 166, 35, 0.4);
+            color: #f5a623;
+        }
+        .gremio-tag {
+            font-size: 0.7rem;
+            font-weight: 800;
+            color: #94a3b8;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .gremio-tag.gold-tag {
+            color: #f5a623;
+        }
+        .gremio-header h3 {
+            font-size: 1.15rem;
+            color: #fff;
+            margin: 3px 0 0 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        .gremio-card p {
+            color: #94a3b8;
+            font-size: 0.88rem;
+            line-height: 1.55;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .gremio-bullets {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            padding-top: 16px;
+        }
+        .gremio-bullets li {
+            color: #cbd5e1;
+            font-size: 0.84rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            line-height: 1.4;
+        }
+        .gremio-bullets i {
+            color: #f5a623;
+            font-size: 0.85rem;
+            margin-top: 2px;
+        }
+        .gremios-banner-cta {
+            max-width: 1200px;
+            margin: 36px auto 0;
+            background: #1e2026;
+            border: 1px solid rgba(245, 166, 35, 0.25);
+            border-radius: 12px;
+            padding: 24px 32px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gremios-cta-text h4 {
+            color: #fff;
+            font-size: 1.15rem;
+            margin: 0 0 6px 0;
+            font-family: 'Oswald', sans-serif;
+        }
+        .gremios-cta-text p {
+            color: #94a3b8;
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* ── SECCIÓN SMART LEAD GATE ── */
+        .smart-gate-section {
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #131418 0%, #181a20 100%);
+            position: relative;
+        }
+        .gate-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #1b1d24;
+            border: 1px solid rgba(245, 166, 35, 0.3);
+            border-radius: 18px;
+            padding: 44px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+        }
+        @media (max-width: 768px) {
+            .gate-container { padding: 24px 18px; }
+        }
+        .gate-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(245, 166, 35, 0.12);
+            border: 1px solid rgba(245, 166, 35, 0.35);
+            color: #f5a623;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .gate-title {
+            font-size: 2.2rem;
+            color: #fff;
+            font-family: 'Oswald', sans-serif;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+        .gate-subtitle {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 32px;
+            max-width: 820px;
+        }
+
+        /* Sector Picker Chips */
+        .sector-picker-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-bottom: 30px;
+        }
+        @media (max-width: 860px) {
+            .sector-picker-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 480px) {
+            .sector-picker-grid { grid-template-columns: 1fr; }
+        }
+        .sector-choice-btn {
+            background: #14151a;
+            border: 2px solid rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            padding: 16px 14px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 8px;
+            transition: all 0.25s ease;
+            color: #94a3b8;
+        }
+        .sector-choice-btn:hover {
+            border-color: rgba(245, 166, 35, 0.4);
+            color: #fff;
+        }
+        .sector-choice-btn.active {
+            background: rgba(245, 166, 35, 0.1);
+            border-color: #f5a623;
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(245, 166, 35, 0.25);
+        }
+        .sector-choice-btn i {
+            font-size: 1.5rem;
+            color: #f5a623;
+        }
+        .sector-choice-btn span {
+            font-size: 0.85rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        /* Technical Fieldset Container */
+        .tech-box {
+            background: #131418;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 28px;
+        }
+        .tech-box-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 18px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .tech-box-header h4 {
+            color: #f5a623;
+            font-size: 1rem;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing: 0.5px;
+        }
+        .tech-box-header span {
+            font-size: 0.76rem;
+            color: #64748b;
+        }
+
+        .gate-form-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+        }
+        @media (max-width: 768px) {
+            .gate-form-grid { grid-template-columns: 1fr; }
+        }
+        .gate-form-group {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .gate-form-group.full-width {
+            grid-column: span 2;
+        }
+        @media (max-width: 768px) {
+            .gate-form-group.full-width { grid-column: span 1; }
+        }
+        .gate-form-group label {
+            color: #cbd5e1;
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+        .gate-form-group input,
+        .gate-form-group select,
+        .gate-form-group textarea {
+            background: #1c1e24;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 6px;
+            padding: 12px 14px;
+            color: #fff;
+            font-size: 0.9rem;
+            outline: none;
+            transition: all 0.2s ease;
+        }
+        .gate-form-group input:focus,
+        .gate-form-group select:focus,
+        .gate-form-group textarea:focus {
+            border-color: #f5a623;
+            box-shadow: 0 0 0 3px rgba(245, 166, 35, 0.2);
+        }
+
+        .gate-alert {
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            border-radius: 8px;
+            padding: 14px 18px;
+            color: #a7f3d0;
+            font-size: 0.88rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 24px;
+        }
+        .gate-alert i {
+            font-size: 1.2rem;
+            color: #10b981;
+        }
+
+        .gate-submit-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .gate-submit-row p {
+            color: #64748b;
+            font-size: 0.8rem;
+            margin: 0;
+            max-width: 480px;
+        }
+        .btn-gate-submit {
+            background: linear-gradient(135deg, #f5a623 0%, #d97706 100%);
+            color: #111;
+            font-size: 1.05rem;
+            font-weight: 800;
+            padding: 16px 36px;
+            border-radius: 8px;
+            border: none;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 6px 20px rgba(245, 166, 35, 0.4);
+            transition: all 0.25s ease;
+        }
+        .btn-gate-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 26px rgba(245, 166, 35, 0.6);
+        }
+
     </style>
 </head>
 <body>
@@ -1639,15 +2246,17 @@
     <!-- ── Header ───────────────────────────────────────────────────────── -->
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo-wrapper">
+            <a href="index.html" class="logo-wrapper" style="display:flex; align-items:center;">
                 <img loading="lazy" src="assets/logo/logo-maquinas-pro.png" alt="MÁQUINAS PRO »">
+                <span class="evolution-pill-badge">EVOLUTION</span>
             </a>
             <ul class="nav-links" id="navLinks">
-                <li><a href="#catalogo" class="active">Catálogo Multimarca</a></li>
+                <li><a href="#catalogo" class="active">Catálogo</a></li>
+                <li><a href="#bolsa-usados">Bolsa Usados & Retoma</a></li>
+                <li><a href="#gremios-agro">Gremios & FINAGRO</a></li>
                 <li><a href="#reconstruccion">Reconstrucción Urbana</a></li>
-                <li><a href="#ventajas">Por Qué Elegirnos</a></li>
                 <li><a href="quienes-somos.html">Quiénes Somos</a></li>
-                <li><a href="#contacto_form">Contacto</a></li>
+                <li><a href="#smart_lead_gate" class="btn-nav-gate"><i class="fas fa-filter-circle-dollar"></i> Cotización Técnica</a></li>
             </ul>
             <div class="nav-actions">
                 <a id="navWhatsappBtn" href="https://wa.me/573174775767" target="_blank" class="btn-whatsapp">
@@ -1848,9 +2457,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwcw-180')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWCW-180 Segadora Autopropulsada%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -1874,9 +2481,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwcw-190')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWCW-190 Segadora Autopropulsada%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -1900,9 +2505,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcw1015t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCW1015T Equipo Agrícola sobre Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -1926,9 +2529,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcw1520t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCW1520T Equipo Agrícola sobre Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -1952,9 +2553,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcw2030t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCW2030T Equipo Agrícola sobre Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -1981,9 +2580,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('cat-420')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Retroexcavadora%20Caterpillar%20420%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2010,9 +2607,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('zoomlion-ze215g')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20Zoomlion%20ZE215G%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2039,9 +2634,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('shantui-dh17')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20el%20Bulldozer%20Shantui%20DH17%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2068,9 +2661,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('case-580n')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Retroexcavadora%20CASE%20580N%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2097,9 +2688,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('hyundai-hx220s')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20HD%20Hyundai%20HX220S%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2126,9 +2715,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('volvo-ec210')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20Volvo%20EC210D%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2155,9 +2742,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('hitachi-zx200')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20Hitachi%20ZX200%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2184,9 +2769,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('hitachi-zx210lc')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20Hitachi%20ZX210-LC%20disponible%20en%20Cali%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2213,9 +2796,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('develon-dx225')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20Develon%20DX225%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2242,9 +2823,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex330')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Excavadora%20Rhino%20REX330%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2273,9 +2852,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('cat-255')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20el%20Minicargador%20Caterpillar%20255%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2302,9 +2879,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('zoomlion-pump')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20Autobomba%20Zoomlion%2056X%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2331,9 +2906,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('zoomlion-lift')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20Plataformas%20de%20Elevaci%C3%B3n%20Zoomlion%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2358,9 +2931,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rpr109')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RPR109 Compactador Neumático%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2384,9 +2955,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rpr1611')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RPR1611 Compactador Neumático%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2410,9 +2979,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rpr2011')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RPR2011 Compactador Neumático%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2436,9 +3003,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct10h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT10H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2462,9 +3027,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct15h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT15H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2488,9 +3051,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct30h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT30H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2514,9 +3075,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct40h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT40H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2540,9 +3099,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct60h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT60H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2566,9 +3123,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct80h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT80H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2592,9 +3147,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct100h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT100H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2618,9 +3171,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct120h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT120H Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2644,9 +3195,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rct14h3')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCT14H3 Compactador Tandem%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2670,9 +3219,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rpl25')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RPL25 Tiende Tubos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2696,9 +3243,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rpl45')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RPL45 Tiende Tubos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2722,9 +3267,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rpl70')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RPL70 Tiende Tubos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2748,9 +3291,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rlt4000m')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RLT4000M %20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2774,9 +3315,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rlt4000h')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RLT4000H %20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2800,9 +3339,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rlt4x150')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RLT4X150 Solar%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2826,9 +3363,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtl17')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTL17 Cargador de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2852,9 +3387,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtl24')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTL24 Cargador de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2878,9 +3411,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtl36')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTL36 Cargador de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2904,9 +3435,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd8')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD8 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2930,9 +3459,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd13')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD13 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2956,9 +3483,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd15')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD15 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -2982,9 +3507,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd17')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD17 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3008,9 +3531,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd24')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD24 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3034,9 +3555,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd36')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD36 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3060,9 +3579,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd50')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD50 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3086,9 +3603,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rd55')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RD55 Bulldozer de Orugas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3112,9 +3627,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rs50-s')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RS50-S Minicargador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3138,9 +3651,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rs60-s')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RS60-S Minicargador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3164,9 +3675,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rs70-s')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RS70-S Minicargador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3193,9 +3702,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('cummins-pump-pack')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20los%20Motores%20de%20Bombas%20Cummins%206BTA%20%2F%206CTA%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3221,9 +3728,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('isuzu-6bg1')">
                             <i class="fas fa-file-lines"></i> Ficha Técnica
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20el%20Motor%20Isuzu%206BG1%20Nuevo%20Japon%C3%A9s%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3248,9 +3753,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rt50')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RT50 Camión Fuera de Carretera%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3274,9 +3777,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rt70')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RT70 Camión Fuera de Carretera%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3300,9 +3801,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rt100')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RT100 Camión Fuera de Carretera%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3326,9 +3825,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rmt50')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RMT50 Camión Minero%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3352,9 +3849,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rmt55')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RMT55 Camión Minero%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3378,9 +3873,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rmt60')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RMT60 Camión Minero%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3404,9 +3897,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rmt80')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RMT80 Camión Minero%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3430,9 +3921,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-radt30')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RADT30 Camión Articulado%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3456,9 +3945,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-radt40')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RADT40 Camión Articulado%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3482,9 +3969,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-radt60')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RADT60 Camión Articulado%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3508,9 +3993,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcp500w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCP500W Perfiladora de Asfalto%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3534,9 +4017,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcp1000w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCP1000W Perfiladora de Asfalto%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3560,9 +4041,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcp1300w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCP1300W Perfiladora de Asfalto%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3586,9 +4065,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rcp2100t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RCP2100T Perfiladora de Asfalto%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3612,9 +4089,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rap45t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RAP45T Asfaltadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3638,9 +4113,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rap70t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RAP70T Asfaltadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3664,9 +4137,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rap75t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RAP75T Asfaltadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3690,9 +4161,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rap45w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RAP45W Asfaltadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3716,9 +4185,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rap60w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RAP60W Asfaltadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3742,9 +4209,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex60w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX60W Excavadora de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3768,9 +4233,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex74cw')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX74CW Excavadora de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3794,9 +4257,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex75w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX75W Excavadora de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3820,9 +4281,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex210w')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX210W Excavadora de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3846,9 +4305,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex10')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX10 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3872,9 +4329,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex18')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX18 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3898,9 +4353,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex22')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX22 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3924,9 +4377,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex30')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX30 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3950,9 +4401,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex35')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX35 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -3976,9 +4425,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex50')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX50 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4002,9 +4449,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex70-8')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX70.8 Miniexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4028,9 +4473,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex130')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX130 Excavadora Mediana%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4054,9 +4497,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex150')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX150 Excavadora Mediana%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4080,9 +4521,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex210')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX210 Excavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4106,9 +4545,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex330')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX330 Excavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4132,9 +4569,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex360')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX360 Excavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4158,9 +4593,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex450')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX450 Excavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4184,9 +4617,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rex700')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20REX700 Excavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4210,9 +4641,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwd132')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWD132 Dozer de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4236,9 +4665,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwd235')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWD235 Dozer de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4262,9 +4689,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwd315')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWD315 Dozer de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4288,9 +4713,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc30')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC30 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4314,9 +4737,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc70')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC70 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4340,9 +4761,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc80')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC80 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4366,9 +4785,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc100')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC100 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4392,9 +4809,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc120')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC120 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4418,9 +4833,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc140')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC140 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4444,9 +4857,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc160')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC160 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4470,9 +4881,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc180')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC180 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4496,9 +4905,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rc200')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RC200 Vibrocompactador%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4522,9 +4929,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rm80')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RM80 Motoniveladora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4548,9 +4953,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rm120')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RM120 Motoniveladora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4574,9 +4977,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rm123')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RM123 Motoniveladora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4600,9 +5001,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rm138')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RM138 Motoniveladora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4626,9 +5025,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rm165')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RM165 Motoniveladora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4652,9 +5049,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rm166')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RM166 Motoniveladora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4678,9 +5073,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc2325')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC2325 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4704,9 +5097,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc4708')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC4708 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4730,9 +5121,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc4807')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC4807 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4756,9 +5145,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc5013')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC5013 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4782,9 +5169,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc5512')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC5512 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4808,9 +5193,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc6014')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC6014 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4834,9 +5217,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc6014b')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC6014B Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4860,9 +5241,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtc6516')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTC6516 Torre Grúa%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4886,9 +5265,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rtce5012t')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RTCE5012T Elevator%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4912,9 +5289,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh254sk')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH254SK Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4938,9 +5313,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh47sk')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH47SK Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4964,9 +5337,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh47be')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH47BE Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -4990,9 +5361,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh714be')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH714BE Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5016,9 +5385,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh1826ex')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH1826EX Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5042,9 +5409,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh2735ex')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH2735EX Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5068,9 +5433,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rh3255ex')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RH3255EX Martillo Hidráulico%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5094,9 +5457,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rsc220')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RSC220 Compactador de Suelos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5120,9 +5481,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rsc223')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RSC223 Compactador de Suelos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5146,9 +5505,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rsc226')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RSC226 Compactador de Suelos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5172,9 +5529,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rsc228')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RSC228 Compactador de Suelos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5198,9 +5553,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rsc230')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RSC230 Compactador de Suelos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5224,9 +5577,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rsc233')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RSC233 Compactador de Suelos%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5250,9 +5601,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl65')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL65 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5276,9 +5625,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl102')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL102 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5302,9 +5649,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl132')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL132 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5328,9 +5673,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl163')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL163 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5354,9 +5697,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl186')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL186 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5380,9 +5721,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl235')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL235 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5406,9 +5745,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rwl315')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RWL315 Cargador de Ruedas%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5432,9 +5769,7 @@
                         <button class="btn btn-outline" onclick="openProductModal('rhino-rbh70')">
                             <i class="fas fa-file-lines"></i> Vista Rápida
                         </button>
-                        <a href="https://wa.me/573174775767?text=Hola%2C%20deseo%20cotizar%20la%20m%C3%A1quina%20RBH70 Retroexcavadora%20en%20M%C3%A1quinas%20Pro" target="_blank" class="btn btn-gold">
-                            <i class="fas fa-bolt"></i> Cotizar
-                        </a>
+                        <button type="button" class="btn btn-gold" onclick="cotizarEquipo(this.closest('.product-card').querySelector('.card-model').textContent, this.closest('.product-card').dataset.category)"><i class="fas fa-bolt"></i> Cotizar</button>
                     </div>
                 </div>
             </div>
@@ -5447,6 +5782,158 @@
             </button>
             <div class="load-more-info" id="loadMoreInfo">
                 Mostrando <span id="currentShowingCount">6</span> de <span id="totalMatchingCount">24</span> equipos
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ── [EVOLUTION: 1. BOLSA DE MAQUINARIA PRO (USADOS & TRADE-IN)] ── -->
+    <section id="bolsa-usados" class="bolsa-section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; max-width: 820px; margin: 0 auto 36px;">
+                <span class="section-tag"><i class="fas fa-handshake"></i> Mercado Secundario & Trade-In</span>
+                <h2 class="section-title">BOLSA DE MAQUINARIA USADA VERIFICADA</h2>
+                <p class="section-subtitle" style="margin-top: 10px; color: #94a3b8; font-size: 1.05rem;">
+                    Comercialización de equipos usados con peritaje técnico en patio nacional o <strong>recibe el valor de tu máquina actual como cuota inicial (Trade-In)</strong> para importar tu flota nueva Rhino desde Florida con garantía de fábrica y hasta 30% de ahorro.
+                </p>
+            </div>
+
+            <!-- Grid de Usados Destacados en Patio -->
+            <div class="bolsa-grid">
+                <!-- Tarjeta 1: Hitachi ZX210-LC Usada en Cali -->
+                <div class="bolsa-card">
+                    <div class="bolsa-card-img">
+                        <span class="bolsa-status-badge"><i class="fas fa-certificate"></i> Usado Verificado</span>
+                        <span class="bolsa-city-badge"><i class="fas fa-location-dot"></i> Cali, Valle (3 Unidades)</span>
+                        <img loading="lazy" src="assets/catalog/hitachi_zx210lc.jpg" alt="Hitachi ZX210-LC Usada">
+                    </div>
+                    <div class="bolsa-card-body">
+                        <div class="bolsa-card-brand">HITACHI • GRADO MINERO</div>
+                        <h3 class="bolsa-card-title">Excavadora Hitachi ZX210-LC</h3>
+                        <div class="bolsa-specs-row">
+                            <span><i class="fas fa-clock"></i> 6.000 Horas</span>
+                            <span><i class="fas fa-calendar-check"></i> Año 2015</span>
+                            <span><i class="fas fa-ruler-horizontal"></i> Oruga 800 mm</span>
+                        </div>
+                        <p class="bolsa-desc">
+                            3 unidades disponibles para entrega inmediata en Cali. Equipadas con luces flood lights para minería, barandillas perimetrales y motor japonés Isuzu 6BG1.
+                        </p>
+                        <div class="bolsa-card-footer">
+                            <button class="btn btn-outline-gold" onclick="openProductModal('hitachi-zx210lc')">
+                                <i class="fas fa-file-lines"></i> Ficha Técnica
+                            </button>
+                            <button class="btn btn-gold" onclick="cotizarEquipo('Hitachi ZX210-LC (Cali)', 'mineria')">
+                                <i class="fas fa-bolt"></i> Calificar / Cotizar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Banner Dinámico Trade-In Retoma -->
+                <div class="trade-in-card">
+                    <div>
+                        <div class="trade-in-badge"><i class="fas fa-repeat"></i> SISTEMA DE RETOMA DIRECTA</div>
+                        <h3 class="trade-in-title">¿Tienes Maquinaria Usada Parada o Desactualizada?</h3>
+                        <p class="trade-in-desc">
+                            No dejes que tu capital se deprecie. Recibimos tu máquina usada en consignación o retoma comercial y aplicamos su valor directamente como la <strong>cuota inicial para importar tu flota nueva Rhino desde Florida</strong> con garantía directa y ahorro de hasta el 30%.
+                        </p>
+                        <ul class="trade-in-features">
+                            <li><i class="fas fa-check-circle"></i> Peritaje técnico y avalúo comercial sin costo para retoma.</li>
+                            <li><i class="fas fa-check-circle"></i> Publicación en la Bolsa MaquiPro a costo cero de inventario.</li>
+                            <li><i class="fas fa-check-circle"></i> Deducción directa contra factura de importación internacional.</li>
+                            <li><i class="fas fa-check-circle"></i> Despacho de tu equipo nuevo 0 horas con respaldo en Colombia.</li>
+                        </ul>
+                    </div>
+                    <div class="trade-in-cta">
+                        <button class="btn btn-tradein" onclick="seleccionarSectorGate('bolsa')">
+                            <i class="fas fa-arrow-right-arrow-left"></i> Postular mi Máquina para Retoma / Venta
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── [EVOLUTION: 2. PABELLÓN GREMIOS & LÍNEAS DE FOMENTO AGROPECUARIO] ── -->
+    <section id="gremios-agro" class="gremios-section">
+        <div class="container" style="max-width: 1200px; margin: 0 auto;">
+            <div style="text-align: center; max-width: 840px; margin: 0 auto 36px;">
+                <span class="section-tag"><i class="fas fa-seedling"></i> Agroindustria & Sector Institucional</span>
+                <h2 class="section-title">CONVENIOS GREMIALES & LÍNEAS DE FOMENTO FINAGRO</h2>
+                <p class="section-subtitle" style="margin-top: 10px; color: #94a3b8; font-size: 1.05rem;">
+                    Alianzas estratégicas para federaciones agrícolas, ingenios azucareros y cooperativas en el Valle del Cauca, Llanos y Costa. Portafolio homologado para subsidios del gobierno y créditos de fomento agrario.
+                </p>
+            </div>
+
+            <!-- Gremios Grid -->
+            <div class="gremios-grid">
+                <!-- Gremio 1: Asocaña e Ingenios Azucareros -->
+                <div class="gremio-card">
+                    <div class="gremio-header">
+                        <div class="gremio-icon"><i class="fas fa-tractor"></i></div>
+                        <div>
+                            <span class="gremio-tag">Valle del Cauca</span>
+                            <h3>Sector Cañero & Asocaña</h3>
+                        </div>
+                    </div>
+                    <p>
+                        Maquinaria configurada para el ciclo continuo del cultivo de caña de azúcar: adecuación de tierras, apertura y mantenimiento de canales de riego, zanjeo y alce de biomasa con pinzas de alta capacidad.
+                    </p>
+                    <ul class="gremio-bullets">
+                        <li><i class="fas fa-circle-check"></i> Excavadoras sobre orugas con líneas hidráulicas auxiliares.</li>
+                        <li><i class="fas fa-circle-check"></i> Tractores y cargadores frontales de alta eficiencia de combustible.</li>
+                        <li><i class="fas fa-circle-check"></i> Despacho prioritario y repuestos garantizados desde Yumbo/Cali.</li>
+                    </ul>
+                </div>
+
+                <!-- Gremio 2: Fedearroz y Fangales -->
+                <div class="gremio-card">
+                    <div class="gremio-header">
+                        <div class="gremio-icon"><i class="fas fa-wheat-awn"></i></div>
+                        <div>
+                            <span class="gremio-tag">Tolima, Huila & Llanos</span>
+                            <h3>Sector Arrocero & Fedearroz</h3>
+                        </div>
+                    </div>
+                    <p>
+                        Soluciones sobre orugas pantaneras de alta flotación para preparación de suelos fangosos, caballoneo, recolección y trasvase de grano en terrenos con saturación hídrica severa.
+                    </p>
+                    <ul class="gremio-bullets">
+                        <li><i class="fas fa-circle-check"></i> Segadoras autopropulsadas y tractores sobre orugas de goma.</li>
+                        <li><i class="fas fa-circle-check"></i> Bombas de achique y motobombas Cummins de alto caudal.</li>
+                        <li><i class="fas fa-circle-check"></i> Mínima compactación de suelo y máxima tracción.</li>
+                    </ul>
+                </div>
+
+                <!-- Gremio 3: Fomento Estatal FINAGRO e ICR -->
+                <div class="gremio-card highlight-card">
+                    <div class="gremio-header">
+                        <div class="gremio-icon gold-icon"><i class="fas fa-landmark"></i></div>
+                        <div>
+                            <span class="gremio-tag gold-tag">Subsidios & Financiación</span>
+                            <h3>Líneas FINAGRO & Subsidio ICR</h3>
+                        </div>
+                    </div>
+                    <p>
+                        Estructuramos la proforma técnica y económica bajo los requerimientos del <strong>Incentivo a la Capitalización Rural (ICR)</strong> y líneas de crédito blando de fomento agrario con la banca intermediaria.
+                    </p>
+                    <ul class="gremio-bullets">
+                        <li><i class="fas fa-circle-check"></i> Cotizaciones oficiales codificadas según estándares FINAGRO.</li>
+                        <li><i class="fas fa-circle-check"></i> Facturación internacional Florida (LLC) para usuarios con exenciones aduaneras.</li>
+                        <li><i class="fas fa-circle-check"></i> Asesoría técnica por ingenieros para dimensionamiento agronómico.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Banner Alianzas CTA -->
+            <div class="gremios-banner-cta">
+                <div class="gremios-cta-text">
+                    <h4>¿Representas una Federación, Ingenio o Asociación de Productores?</h4>
+                    <p>Solicita una reunión técnica con nuestra gerencia de proyectos para estructurar un Convenio Marco de Renovación de Flota.</p>
+                </div>
+                <button class="btn btn-gold" onclick="seleccionarSectorGate('agro')">
+                    <i class="fas fa-file-signature"></i> Solicitar Estructuración Gremial
+                </button>
             </div>
         </div>
     </section>
@@ -5595,79 +6082,243 @@
     </section>
 
     <!-- ── Contacto Formulario ───────────────────────────────────────────── -->
-    <section class="contact-section" id="contacto_form">
-        <div class="contact-wrapper">
-            <div class="contact-info">
-                <span class="section-tag">Atención Comercial</span>
-                <h2 class="section-title">SOLICITAR INFORMACIÓN</h2>
-                <p>Nuestro equipo de ingeniería te contactará rápidamente para estructurar una propuesta técnica y económica adaptada a las necesidades de tu proyecto.</p>
-                
-                <a href="https://wa.me/573174775767?text=Hola%20M%C3%A1quinas%20Pro%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20equipos" target="_blank" class="btn btn-whatsapp" style="margin-bottom: 40px; display: inline-flex;">
-                    <i class="fab fa-whatsapp"></i> Chat Directo con un Asesor
-                </a>
-
-                <div class="contact-card">
-                    <h4><i class="fas fa-map-marker-alt" style="color:var(--primary-gold); margin-right:8px;"></i> Nuestras Oficinas</h4>
-                    <p>
-                        <strong style="color:var(--text-white);">MÁQUINAS PRO Colombia</strong><br>
-                        Avenida 5ta Norte #21-22, Oficina 502<br>
-                        Edificio Centro Versalles, Cali, Valle del Cauca
-                    </p>
-                    <a href="https://www.google.com/maps/search/?api=1&query=Edificio+Centro+Versalles+Cali" target="_blank">
-                        <i class="fas fa-location-arrow"></i> Abrir en Google Maps
-                    </a>
-                </div>
-                <p style="font-size:13px; color:#666;">
-                    <i class="fas fa-lock" style="color:var(--primary-gold);"></i> Tus datos son tratados de forma confidencial conforme a la Ley 1581 de 2012 (Habeas Data).
+        <!-- ── [EVOLUTION: 3. SMART LEAD GATE (CALIFICACIÓN TÉCNICA ANTI-DESGASTE)] ── -->
+    <section class="smart-gate-section" id="smart_lead_gate">
+        <div class="gate-container">
+            <div style="text-align: center;">
+                <span class="gate-badge"><i class="fas fa-shield-check"></i> Smart Lead Gate • Filtro Técnico</span>
+                <h2 class="gate-title">CALIFICACIÓN & COTIZACIÓN TÉCNICA</h2>
+                <p class="gate-subtitle" style="margin: 0 auto 30px;">
+                    En MÁQUINAS PRO no realizamos cotizaciones ciegas ni genéricas. Nuestro equipo de ingenieros mecánicos evalúa las especificaciones operativas de tu obra para garantizar el dimensionamiento exacto y el menor costo por tonelada o metro cúbico.
                 </p>
             </div>
 
-            <div class="contact-form">
-                <form action="https://formsubmit.co/contacto@maquinas.pro" method="POST">
-                    <input type="hidden" name="_cc" value="contactomaquinaspro@gmail.com">
-                    <input type="hidden" name="_subject" value="Nueva Solicitud Web - MÁQUINAS PRO">
-                    <input type="hidden" name="_captcha" value="false">
-                    <!-- Configurar luego: <input type="hidden" name="_next" value="gracias.html"> -->
-                    
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Nombre Completo *</label>
-                            <input type="text" name="Nombre" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>Empresa / Organización *</label>
-                            <input type="text" name="Empresa" class="form-control" required>
-                        </div>
-                    </div>
-
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Correo Electrónico *</label>
-                            <input type="email" name="Email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <label>WhatsApp / Teléfono *</label>
-                            <input type="tel" name="Telefono" class="form-control" placeholder="+57 300 000 0000" required>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="margin-top:10px;">
-                        <label>¿En qué podemos ayudarte? (Selecciona una o varias)</label>
-                        <div class="chips-container">
-                            <label class="chip"><input type="checkbox" name="Interes" value="Comprar Equipo Nuevo"><span>Comprar Equipo Nuevo</span></label>
-                            <label class="chip"><input type="checkbox" name="Interes" value="Cotizar Leasing"><span>Cotizar Leasing</span></label>
-                            <label class="chip"><input type="checkbox" name="Interes" value="Flota Especial"><span>Flota Especial de Gobierno</span></label>
-                            <label class="chip"><input type="checkbox" name="Interes" value="Repuestos/Servicio"><span>Repuestos / Servicio Técnico</span></label>
-                        </div>
-                    </div>
-
-                    <div class="form-group" style="margin-top:15px;">
-                        <button type="submit" class="btn btn-gold" style="width:100%; border:none; cursor:pointer;">Enviar Solicitud Segura <i class="fas fa-paper-plane" style="margin-left:8px;"></i></button>
-                    </div>
-                </form>
+            <!-- Selector de Vertical -->
+            <div class="sector-picker-grid">
+                <button type="button" class="sector-choice-btn active" id="btnSectorMineria" onclick="seleccionarSectorGate('mineria')">
+                    <i class="fas fa-mountain"></i>
+                    <span>MINERÍA & CANTERAS</span>
+                </button>
+                <button type="button" class="sector-choice-btn" id="btnSectorCivil" onclick="seleccionarSectorGate('civil')">
+                    <i class="fas fa-trowel-bricks"></i>
+                    <span>OBRA CIVIL & VÍAS</span>
+                </button>
+                <button type="button" class="sector-choice-btn" id="btnSectorAgro" onclick="seleccionarSectorGate('agro')">
+                    <i class="fas fa-seedling"></i>
+                    <span>AGRO & FEDERACIONES</span>
+                </button>
+                <button type="button" class="sector-choice-btn" id="btnSectorBolsa" onclick="seleccionarSectorGate('bolsa')">
+                    <i class="fas fa-repeat"></i>
+                    <span>BOLSA USADOS / RETOMA</span>
+                </button>
             </div>
+
+            <!-- Formulario Técnico -->
+            <form id="smartGateForm" onsubmit="enviarSmartLeadGate(event)">
+                <!-- Datos de Contacto Base -->
+                <div class="gate-form-grid" style="margin-bottom: 24px;">
+                    <div class="gate-form-group">
+                        <label>Nombre y Cargo del Solicitante *</label>
+                        <input type="text" id="gateNombre" placeholder="Ej: Ing. Carlos Gómez - Jefe de Maquinaria" required>
+                    </div>
+                    <div class="gate-form-group">
+                        <label>Empresa / Consorcio / Razón Social *</label>
+                        <input type="text" id="gateEmpresa" placeholder="Ej: Consorcio Minero del Valle S.A.S." required>
+                    </div>
+                    <div class="gate-form-group">
+                        <label>Teléfono Celular / WhatsApp *</label>
+                        <input type="tel" id="gateTelefono" placeholder="+57 300 123 4567" required>
+                    </div>
+                    <div class="gate-form-group">
+                        <label>Ciudad y Departamento del Frente de Trabajo *</label>
+                        <input type="text" id="gateUbicacion" placeholder="Ej: Yumbo, Valle del Cauca" required>
+                    </div>
+                </div>
+
+                <!-- 1. FIELDSET TÉCNICO: MINERÍA -->
+                <div class="tech-box" id="fieldsetMineria">
+                    <div class="tech-box-header">
+                        <h4><i class="fas fa-mountain"></i> Parámetros Técnicos de Explotación Minera</h4>
+                        <span>Validación de ingeniería requerida</span>
+                    </div>
+                    <div class="gate-form-grid">
+                        <div class="gate-form-group">
+                            <label>Tipo de Mineral / Material a Extraer</label>
+                            <select id="mineriaMaterial">
+                                <option value="Carbón Térmico / Metalúrgico">Carbón Térmico / Metalúrgico</option>
+                                <option value="Oro / Aluvión / Grava de Río">Oro / Aluvión / Grava de Río</option>
+                                <option value="Roca / Caliza / Cantera de Agregados">Roca / Caliza / Cantera de Agregados</option>
+                                <option value="Arcillas / Yeso / Material Suave">Arcillas / Yeso / Material Suave</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Ancho de Oruga Requerido</label>
+                            <select id="mineriaOruga">
+                                <option value="800 mm (Pantanera de Servicio Pesado)">800 mm (Pantanera de Servicio Pesado)</option>
+                                <option value="700 mm (Estándar Reforzada)">700 mm (Estándar Reforzada)</option>
+                                <option value="600 mm (Roca / Tracción Estándar)">600 mm (Roca / Tracción Estándar)</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Capacidad del Cucharón / Balde Estimada (m³)</label>
+                            <input type="text" id="mineriaBalde" placeholder="Ej: 1.0 m³ - 1.6 m³">
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Profundidad de Banco / Decape Requerida</label>
+                            <input type="text" id="mineriaDecape" placeholder="Ej: 6.5 metros de profundidad">
+                        </div>
+                        <div class="gate-form-group full-width">
+                            <label>Régimen de Operación por Jornada</label>
+                            <select id="mineriaTurno">
+                                <option value="Operación Continua 24 Horas (3 Turnos)">Operación Continua 24 Horas (3 Turnos)</option>
+                                <option value="Doble Turno 16 Horas / Día">Doble Turno 16 Horas / Día</option>
+                                <option value="Turno Sencillo 8 - 10 Horas / Día">Turno Sencillo 8 - 10 Horas / Día</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2. FIELDSET TÉCNICO: OBRA CIVIL -->
+                <div class="tech-box" id="fieldsetCivil" style="display:none;">
+                    <div class="tech-box-header">
+                        <h4><i class="fas fa-trowel-bricks"></i> Parámetros de Infraestructura y Construcción</h4>
+                        <span>Validación de frente de obra</span>
+                    </div>
+                    <div class="gate-form-grid">
+                        <div class="gate-form-group">
+                            <label>Tipo de Proyecto Vial o Civil</label>
+                            <select id="civilTipoObra">
+                                <option value="Vías Terciarias / Mantenimiento Rural">Vías Terciarias / Mantenimiento Rural</option>
+                                <option value="Vías Principales 4G/5G y Pavimentación">Vías Principales 4G/5G y Pavimentación</option>
+                                <option value="Urbanismo y Movimiento Masivo de Tierras">Urbanismo y Movimiento Masivo de Tierras</option>
+                                <option value="Dragado, Jarillones y Obras de Contención">Dragado, Jarillones y Obras de Contención</option>
+                                <option value="Demolición y Excavación en Espacio Confinado">Demolición y Excavación en Espacio Confinado</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Tipo de Equipo Prioritario</label>
+                            <select id="civilEquipo">
+                                <option value="Excavadora de Orugas 20 - 24 Toneladas">Excavadora de Orugas 20 - 24 Toneladas</option>
+                                <option value="Retroexcavadora 4x4 con Brazo Extensible">Retroexcavadora 4x4 con Brazo Extensible</option>
+                                <option value="Minicargador de Ruedas / Orugas (Tipo Bobcat)">Minicargador de Ruedas / Orugas (Tipo Bobcat)</option>
+                                <option value="Motoniveladora de 140 - 160 HP">Motoniveladora de 140 - 160 HP</option>
+                                <option value="Vibrocompactador de Suelos 10 - 12 Ton">Vibrocompactador de Suelos 10 - 12 Ton</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Estado del Contrato de Obra</label>
+                            <select id="civilEstado">
+                                <option value="Obra Adjudicada con Acta de Inicio Inmediata">Obra Adjudicada con Acta de Inicio Inmediata</option>
+                                <option value="Proceso Licitatorio en Curso (Pliegos)">Proceso Licitatorio en Curso (Pliegos)</option>
+                                <option value="Proyecto Privado en Ejecución">Proyecto Privado en Ejecución</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Modalidad de Adquisición Prevista</label>
+                            <select id="civilModalidad">
+                                <option value="Compra Contado / Anticipo">Compra Contado / Anticipo</option>
+                                <option value="Cupo Leasing Bancario Aprobado">Cupo Leasing Bancario Aprobado</option>
+                                <option value="Requiere Asesoría de Estructuración Financiera">Requiere Asesoría de Estructuración Financiera</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3. FIELDSET TÉCNICO: AGRO & FEDERACIONES -->
+                <div class="tech-box" id="fieldsetAgro" style="display:none;">
+                    <div class="tech-box-header">
+                        <h4><i class="fas fa-seedling"></i> Parámetros Agronómicos e Institucionales</h4>
+                        <span>Estructuración para subsidios y federaciones</span>
+                    </div>
+                    <div class="gate-form-grid">
+                        <div class="gate-form-group">
+                            <label>Tipo de Cultivo / Actividad</label>
+                            <select id="agroCultivo">
+                                <option value="Caña de Azúcar (Ingenio / Proveedor)">Caña de Azúcar (Ingenio / Proveedor)</option>
+                                <option value="Arroz (Riego / Secano)">Arroz (Riego / Secano)</option>
+                                <option value="Palma de Aceite">Palma de Aceite</option>
+                                <option value="Cereales / Maíz / Soya">Cereales / Maíz / Soya</option>
+                                <option value="Ganadería / Pastos y Forrajes">Ganadería / Pastos y Forrajes</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Extensión del Predio (Hectáreas Netas)</label>
+                            <input type="text" id="agroHectareas" placeholder="Ej: 250 Hectáreas">
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Labor Agronómica Principal</label>
+                            <select id="agroLabor">
+                                <option value="Apertura y Limpieza de Canales / Zanjeo">Apertura y Limpieza de Canales / Zanjeo</option>
+                                <option value="Adecuación y Nivelación de Suelos Fangosos">Adecuación y Nivelación de Suelos Fangosos</option>
+                                <option value="Alce y Cargue de Biomasa / Cosecha">Alce y Cargue de Biomasa / Cosecha</option>
+                                <option value="Bombeo e Impulsión de Riego de Alto Caudal">Bombeo e Impulsión de Riego de Alto Caudal</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>¿Requiere Estructuración FINAGRO / ICR?</label>
+                            <select id="agroFinagro">
+                                <option value="Sí, requiero Proforma Homologada para Crédito FINAGRO / ICR">Sí, requiero Proforma Homologada para Crédito FINAGRO / ICR</option>
+                                <option value="No, compra con recursos propios">No, compra con recursos propios</option>
+                                <option value="Deseo conocer opciones de Facturación Internacional Florida (LLC)">Deseo conocer opciones de Facturación Internacional Florida (LLC)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. FIELDSET TÉCNICO: BOLSA DE USADOS / RETOMA (TRADE-IN) -->
+                <div class="tech-box" id="fieldsetBolsa" style="display:none;">
+                    <div class="tech-box-header">
+                        <h4><i class="fas fa-repeat"></i> Datos de la Máquina en Retoma / Bolsa</h4>
+                        <span>Trade-In para cuota inicial de maquinaria nueva</span>
+                    </div>
+                    <div class="gate-form-grid">
+                        <div class="gate-form-group">
+                            <label>Propósito de tu Solicitud</label>
+                            <select id="bolsaProposito">
+                                <option value="Deseo entregar mi máquina en RETOMA como cuota inicial para equipo nuevo">Deseo entregar mi máquina en RETOMA como cuota inicial para equipo nuevo</option>
+                                <option value="Deseo consignar mi máquina en la Bolsa de Usados para venta">Deseo consignar mi máquina en la Bolsa de Usados para venta</option>
+                                <option value="Deseo comprar una máquina usada verificada en patio">Deseo comprar una máquina usada verificada en patio</option>
+                            </select>
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Marca y Modelo de la Máquina Usada</label>
+                            <input type="text" id="bolsaModelo" placeholder="Ej: Caterpillar 320D / Case 580N">
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Año de Fabricación y Horómetro Real</label>
+                            <input type="text" id="bolsaHoras" placeholder="Ej: Año 2016 - 7.500 horas">
+                        </div>
+                        <div class="gate-form-group">
+                            <label>Ciudad donde está el equipo y Valor Pretendido</label>
+                            <input type="text" id="bolsaValor" placeholder="Ej: Cali - $220.000.000 COP">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Campo oculto para modelo específico si viene desde botón Cotizar -->
+                <input type="hidden" id="gateEquipoSugerido" value="">
+
+                <!-- Alerta de Compromiso de Ingeniería -->
+                <div class="gate-alert">
+                    <i class="fas fa-clock-rotate-left"></i>
+                    <div>
+                        <strong>Garantía de Respuesta Técnica en 24 Horas:</strong> Su requerimiento técnico será evaluado por un ingeniero de aplicaciones antes de emitir la proforma comercial.
+                    </div>
+                </div>
+
+                <!-- Fila de Envío -->
+                <div class="gate-submit-row">
+                    <p>
+                        <i class="fas fa-lock" style="color:#f5a623;"></i> Información protegida bajo reserva comercial y Ley de Protección de Datos Personales (Habeas Data).
+                    </p>
+                    <button type="submit" class="btn-gate-submit">
+                        <i class="fab fa-whatsapp"></i> ENVIAR VALIDACIÓN & ABRIR DIÁLOGO TÉCNICO
+                    </button>
+                </div>
+            </form>
         </div>
     </section>
+
 
     <!-- ── Footer ───────────────────────────────────────────────────────── -->
     <footer id="contacto">
@@ -11518,9 +12169,11 @@
             const targets = [
                 document.querySelector('.hero-section'),
                 document.getElementById('catalogo'),
+                document.getElementById('bolsa-usados'),
+                document.getElementById('gremios-agro'),
                 document.getElementById('reconstruccion'),
                 document.getElementById('ventajas'),
-                document.getElementById('contacto_form'),
+                document.getElementById('smart_lead_gate'),
                 document.querySelector('footer')
             ].filter(Boolean);
 
@@ -11552,6 +12205,111 @@
 
         // Open Product Modal (Gecolsa Style)
         // Open Product Modal (Gecolsa Style)
+        
+        // ════════════════════════════════════════════════════════════════════
+        // SMART LEAD GATE: LÓGICA CONDICIONAL & GENERADOR DE WHATSAPP TÉCNICO
+        // ════════════════════════════════════════════════════════════════════
+        let currentGateSector = 'mineria';
+
+        function seleccionarSectorGate(sectorKey) {
+            currentGateSector = sectorKey;
+            
+            // Actualizar botones de selección
+            document.querySelectorAll('.sector-choice-btn').forEach(btn => btn.classList.remove('active'));
+            const btnMap = {
+                'mineria': 'btnSectorMineria',
+                'civil': 'btnSectorCivil',
+                'agro': 'btnSectorAgro',
+                'bolsa': 'btnSectorBolsa'
+            };
+            const activeBtn = document.getElementById(btnMap[sectorKey]);
+            if (activeBtn) activeBtn.classList.add('active');
+
+            // Mostrar/Ocultar Fieldsets
+            document.getElementById('fieldsetMineria').style.display = (sectorKey === 'mineria') ? 'block' : 'none';
+            document.getElementById('fieldsetCivil').style.display = (sectorKey === 'civil') ? 'block' : 'none';
+            document.getElementById('fieldsetAgro').style.display = (sectorKey === 'agro') ? 'block' : 'none';
+            document.getElementById('fieldsetBolsa').style.display = (sectorKey === 'bolsa') ? 'block' : 'none';
+
+            // Scroll suave si se invocó desde fuera
+            const gateEl = document.getElementById('smart_lead_gate');
+            if (gateEl && window.scrollY > 100) {
+                gateEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function cotizarEquipo(modeloNombre, sectorSugerido) {
+            if (sectorSugerido) {
+                seleccionarSectorGate(sectorSugerido);
+            }
+            const sugInput = document.getElementById('gateEquipoSugerido');
+            if (sugInput) sugInput.value = modeloNombre;
+
+            const gateEl = document.getElementById('smart_lead_gate');
+            if (gateEl) {
+                gateEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+
+        function enviarSmartLeadGate(e) {
+            e.preventDefault();
+
+            const nombre = document.getElementById('gateNombre').value.trim();
+            const empresa = document.getElementById('gateEmpresa').value.trim();
+            const tel = document.getElementById('gateTelefono').value.trim();
+            const ubicacion = document.getElementById('gateUbicacion').value.trim();
+            const equipoSug = document.getElementById('gateEquipoSugerido').value.trim();
+
+            let sectorNombre = '';
+            let detalleTecnico = '';
+
+            if (currentGateSector === 'mineria') {
+                sectorNombre = '⛏️ MINERÍA Y CANTERAS';
+                const mat = document.getElementById('mineriaMaterial').value;
+                const oruga = document.getElementById('mineriaOruga').value;
+                const balde = document.getElementById('mineriaBalde').value.trim() || 'No especificado';
+                const decape = document.getElementById('mineriaDecape').value.trim() || 'No especificado';
+                const turno = document.getElementById('mineriaTurno').value;
+                detalleTecnico = `• Material: ${mat}\n• Ancho de Oruga: ${oruga}\n• Capacidad Balde: ${balde}\n• Profundidad Decape: ${decape}\n• Régimen Operativo: ${turno}`;
+            } else if (currentGateSector === 'civil') {
+                sectorNombre = '🏗️ OBRA CIVIL E INFRAESTRUCTURA';
+                const obra = document.getElementById('civilTipoObra').value;
+                const eq = document.getElementById('civilEquipo').value;
+                const est = document.getElementById('civilEstado').value;
+                const mod = document.getElementById('civilModalidad').value;
+                detalleTecnico = `• Tipo de Obra: ${obra}\n• Equipo Requerido: ${eq}\n• Estado Contrato: ${est}\n• Modalidad Financiera: ${mod}`;
+            } else if (currentGateSector === 'agro') {
+                sectorNombre = '🌾 AGROINDUSTRIA Y GREMIOS';
+                const cul = document.getElementById('agroCultivo').value;
+                const has = document.getElementById('agroHectareas').value.trim() || 'No especificada';
+                const lab = document.getElementById('agroLabor').value;
+                const fin = document.getElementById('agroFinagro').value;
+                detalleTecnico = `• Cultivo: ${cul}\n• Extensión Predio: ${has}\n• Labor Principal: ${lab}\n• Línea FINAGRO/ICR: ${fin}`;
+            } else if (currentGateSector === 'bolsa') {
+                sectorNombre = '🔄 BOLSA DE USADOS & TRADE-IN';
+                const prop = document.getElementById('bolsaProposito').value;
+                const mod = document.getElementById('bolsaModelo').value.trim() || 'No especificado';
+                const hrs = document.getElementById('bolsaHoras').value.trim() || 'No especificado';
+                const val = document.getElementById('bolsaValor').value.trim() || 'No especificado';
+                detalleTecnico = `• Propósito: ${prop}\n• Modelo Usado: ${mod}\n• Año / Horas: ${hrs}\n• Ubicación y Valor: ${val}`;
+            }
+
+            let msg = `*SOLICITUD DE CALIFICACIÓN TÉCNICA - MÁQUINAS PRO EVOLUTION*\n\n`;
+            msg += `👤 *Solicitante:* ${nombre}\n`;
+            msg += `🏢 *Empresa:* ${empresa}\n`;
+            msg += `📱 *WhatsApp:* ${tel}\n`;
+            msg += `📍 *Ubicación del Frente:* ${ubicacion}\n`;
+            if (equipoSug) {
+                msg += `🚜 *Equipo de Referencia:* ${equipoSug}\n`;
+            }
+            msg += `\n🎯 *SECTOR SELECCIONADO:* ${sectorNombre}\n`;
+            msg += `\n📋 *ESPECIFICACIONES TÉCNICAS INGRESADAS:*\n${detalleTecnico}\n\n`;
+            msg += `_Solicito evaluación de ingeniería y dimensionamiento técnico de la propuesta._`;
+
+            const whatsappUrl = `https://wa.me/573174775767?text=${encodeURIComponent(msg)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+
         function openProductModal(key) {
             const data = machineData[key];
             if (!data) return;
