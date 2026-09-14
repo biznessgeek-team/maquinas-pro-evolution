@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página No Encontrada (404) | MÁQUINAS PRO »</title>
+    <link rel="icon" type="image/png" href="assets/logo/logo-maquinas-pro.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-yellow: #f5a623;
+            --primary-gold: #f2b705;
+            --bg-dark: #0b0c0e;
+            --surface-dark: #14161a;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: #f1f5f9;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        header {
+            padding: 20px 30px;
+            background: rgba(11, 12, 14, 0.95);
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            justify-content: center;
+        }
+        .logo-img {
+            max-height: 48px;
+            width: auto;
+        }
+        .error-container {
+            max-width: 650px;
+            margin: 60px auto;
+            padding: 40px 24px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+        .error-badge {
+            background: rgba(245, 166, 35, 0.12);
+            color: var(--primary-yellow);
+            border: 1px solid var(--primary-yellow);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        .error-code {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(5rem, 12vw, 8rem);
+            font-weight: 900;
+            line-height: 1;
+            background: linear-gradient(135deg, #f5a623 0%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .error-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: clamp(1.4rem, 3vw, 1.8rem);
+            font-weight: 800;
+            color: #fff;
+        }
+        .error-desc {
+            color: #94a3b8;
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 480px;
+        }
+        .error-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 14px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 13px 26px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            cursor: pointer;
+        }
+        .btn-gold {
+            background: var(--primary-yellow);
+            color: #111;
+        }
+        .btn-gold:hover {
+            background: #ffb338;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(245, 166, 35, 0.35);
+        }
+        .btn-whatsapp {
+            background: #25D366;
+            color: #fff;
+        }
+        .btn-whatsapp:hover {
+            background: #20ba5a;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: #cbd5e1;
+        }
+        .btn-outline:hover {
+            border-color: #fff;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        footer {
+            padding: 24px;
+            text-align: center;
+            border-top: 1px solid var(--border-color);
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">
+            <img src="assets/logo/logo-maquinas-pro.png" alt="MÁQUINAS PRO »" class="logo-img">
+        </a>
+    </header>
+
+    <main class="error-container">
+        <span class="error-badge"><i class="fas fa-triangle-exclamation"></i> Error 404</span>
+        <div class="error-code">404</div>
+        <h1 class="error-title">Página no encontrada o ruta desactualizada</h1>
+        <p class="error-desc">
+            La página que estás buscando no existe o ha sido reubicada dentro de nuestro nuevo catálogo multimarca de maquinaria pesada.
+        </p>
+        <div class="error-actions">
+            <a href="/#catalogo" class="btn btn-gold">
+                <i class="fas fa-th-large"></i> Ver Catálogo de Máquinas
+            </a>
+            <a href="https://wa.me/573174775767?text=Hola%2C%20estaba%20navegando%20en%20M%C3%A1quinas%20Pro%20y%20necesito%20asesor%C3%ADa%20comercial." target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Hablar con un Asesor
+            </a>
+            <a href="/" class="btn btn-outline">
+                <i class="fas fa-home"></i> Ir al Inicio
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 MÁQUINAS PRO » | Importador y Representante de Maquinaria Pesada en Colombia</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiénes Somos | MÁQUINAS PRO » Importador y Respaldo Multimarca en Colombia</title>
+    <meta name="description" content="Conoce a MÁQUINAS PRO, empresa líder en importación, distribución y leasing de maquinaria pesada 0 horas de las principales marcas mundiales en Colombia.">
+    <link rel="icon" href="assets/logo/logo-maquinas-pro.png" type="image/png">
+
+    <!-- SEO & Open Graph Meta Tags -->
+    <meta name="keywords" content="maquinaria pesada, excavadoras, retroexcavadoras, venta de maquinaria, leasing maquinaria, Colombia, Caterpillar, Volvo, Zoomlion, Hyundai, reconstrucción urbana, equipos de construcción">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.maquinas.pro/">
+    <meta property="og:title" content="MÁQUINAS PRO » | Venta y Leasing de Maquinaria Pesada en Colombia">
+    <meta property="og:description" content="Importador multimarca: Caterpillar, Volvo, Zoomlion, HD Hyundai. Flotas nuevas 0 horas listas para entrega y reconstrucción urbana.">
+    <meta property="og:image" content="https://www.maquinas.pro/assets/logo/logo-maquinas-pro.png">
+    
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="maquinas.pro">
+    <meta property="twitter:url" content="https://www.maquinas.pro/">
+    <meta name="twitter:title" content="MÁQUINAS PRO » | Venta y Leasing de Maquinaria Pesada en Colombia">
+    <meta name="twitter:description" content="Importador multimarca: Caterpillar, Volvo, Zoomlion, HD Hyundai. Flotas nuevas 0 horas listas para entrega inmediata.">
+    <meta name="twitter:image" content="https://www.maquinas.pro/assets/logo/logo-maquinas-pro.png">
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-gold: #F2B705;
+            --accent-orange: #FF6600;
+            --dark-charcoal: #121316;
+            --dark-surface: #1E2024;
+            --dark-card: #26292E;
+            --dark-border: #353940;
+            --text-white: #FFFFFF;
+            --text-gray: #A0A5B0;
+            --text-muted: #717784;
+            --font-heading: 'Oswald', sans-serif;
+            --font-body: 'Inter', sans-serif;
+            --radius-sm: 6px;
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { font-family: var(--font-body); background-color: var(--dark-charcoal); color: var(--text-white); line-height: 1.6; }
+        
+        header { position: sticky; top: 0; z-index: 1000; background: rgba(18, 19, 22, 0.95); backdrop-filter: blur(12px); border-bottom: 1px solid var(--dark-border); }
+        .nav-container { max-width: 1400px; margin: 0 auto; padding: 12px 24px; display: flex; align-items: center; justify-content: space-between; }
+        .logo-wrapper img { height: 48px; object-fit: contain; }
+        .nav-links { display: flex; gap: 28px; list-style: none; align-items: center; }
+        .nav-links a { color: var(--text-white); text-decoration: none; font-size: 14px; font-weight: 600; text-transform: uppercase; transition: color 0.2s; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-gold); }
+        .btn-whatsapp { background-color: #25D366; color: #fff; padding: 10px 20px; border-radius: var(--radius-sm); text-decoration: none; font-weight: 700; font-size: 13px; display: inline-flex; align-items: center; gap: 8px; }
+
+        .page-hero {
+            padding: 80px 24px 60px;
+            background: linear-gradient(180deg, rgba(18,19,22,0.6) 0%, var(--dark-charcoal) 100%),
+                        url('assets/catalog/zoomlion_earthmoving_machinery_company_cover.jpg') center/cover no-repeat;
+            text-align: center;
+            border-bottom: 2px solid var(--primary-gold);
+        }
+
+        .page-title { font-family: var(--font-heading); font-size: 48px; text-transform: uppercase; margin-bottom: 12px; }
+        .page-title span { color: var(--primary-gold); }
+        .page-subtitle { color: var(--text-gray); font-size: 18px; max-width: 750px; margin: 0 auto; }
+
+        .content-section { max-width: 1200px; margin: 0 auto; padding: 70px 24px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-bottom: 70px; }
+        .grid-2 img { width: 100%; border-radius: var(--radius-lg); border: 1px solid var(--dark-border); }
+
+        .about-text h2 { font-family: var(--font-heading); font-size: 32px; color: var(--primary-gold); margin-bottom: 16px; text-transform: uppercase; }
+        .about-text p { color: var(--text-gray); margin-bottom: 16px; font-size: 15px; }
+
+        .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
+        .value-card { background: var(--dark-surface); border: 1px solid var(--dark-border); border-radius: var(--radius-md); padding: 30px 24px; text-align: center; }
+        .value-card i { font-size: 36px; color: var(--primary-gold); margin-bottom: 16px; }
+        .value-card h3 { font-family: var(--font-heading); font-size: 20px; margin-bottom: 10px; text-transform: uppercase; }
+        .value-card p { color: var(--text-gray); font-size: 14px; }
+
+        footer { background: #0B0C0E; padding: 50px 24px 30px; border-top: 1px solid var(--dark-border); text-align: center; }
+        footer img { max-height: 44px; margin-bottom: 20px; }
+        footer p { color: var(--text-gray); font-size: 14px; }
+    
+        /* Mobile Menu Toggle */
+        .nav-actions { display: flex; align-items: center; gap: 12px; }
+        .mobile-menu-btn { display: none; color: var(--text-white); font-size: 24px; cursor: pointer; background: none; border: none; padding: 5px; }
+        
+        @media (max-width: 992px) {
+            .grid-2 { grid-template-columns: 1fr; gap: 32px; }
+            .values-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 32px; }
+        }
+
+        @media (max-width: 992px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(18, 19, 22, 0.98);
+                backdrop-filter: blur(12px);
+                padding: 10px 0;
+                border-bottom: 1px solid var(--dark-border);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            }
+            .nav-links.active { display: flex; }
+            .nav-links li { width: 100%; }
+            .nav-links a { padding: 15px 24px; display: block; border-bottom: 1px solid rgba(255,255,255,0.05); }
+            .mobile-menu-btn { display: block; }
+            .btn-whatsapp span { display: none; } /* Hide text on very small screens, keep icon */
+        }
+
+    
+        .footer-multibrand-banner {
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            position: relative;
+        }
+        .footer-multibrand-banner::before,
+        .footer-multibrand-banner::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            width: 100px;
+            height: 100%;
+            z-index: 2;
+        }
+        .footer-multibrand-banner::before {
+            left: 0;
+            background: linear-gradient(to right, #0B0C0E 0%, transparent 100%);
+        }
+        .footer-multibrand-banner::after {
+            right: 0;
+            background: linear-gradient(to left, #0B0C0E 0%, transparent 100%);
+        }
+        .brand-carousel-track {
+            display: flex;
+            align-items: center;
+            width: max-content;
+            animation: scrollCarousel 30s linear infinite;
+        }
+        .brand-carousel-track:hover { animation-play-state: paused; }
+        .brand-carousel-track img {
+            height: 35px;
+            margin: 0 30px;
+            object-fit: contain;
+            filter: grayscale(100%) opacity(0.5);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        .brand-carousel-track img:hover {
+            filter: grayscale(0%) opacity(1);
+            transform: scale(1.05);
+        }
+        @keyframes scrollCarousel {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo-wrapper">
+                <img src="assets/logo/logo-maquinas-pro.png" alt="MÁQUINAS PRO »">
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#catalogo">Catálogo Multimarca</a></li>
+                <li><a href="index.html#reconstruccion">Reconstrucción Urbana</a></li>
+                <li><a href="quienes-somos.html" class="active">Quiénes Somos</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a id="navWhatsappBtn" href="https://wa.me/573174775767" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span>+57 317 477 5767</span>
+                </a>
+                <button class="mobile-menu-btn" onclick="toggleMenu()" aria-label="Abrir menú">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <h1 class="page-title">RESPALDO & EXPERIENCIA <span>MÁQUINAS PRO »</span></h1>
+        <p class="page-subtitle">
+            Conectamos la mejor tecnología en maquinaria pesada del mundo con los proyectos de infraestructura más exigentes de Colombia.
+        </p>
+    </div>
+
+    <div class="content-section">
+        <div class="grid-2">
+            <div class="about-text">
+                <h2>Nuestra Visión y Compromiso</h2>
+                <p>
+                    <strong>MÁQUINAS PRO</strong> nace como una respuesta integral a la necesidad de constructores, mineros, agricultores y entidades gubernamentales de acceder a maquinaria pesada de primera línea con <strong>disponibilidad inmediata, opciones de leasing flexibles y respaldo técnico 24/7</strong>.
+                </p>
+                <p>
+                    No nos limitamos a una sola marca: como <strong>importador y distribuidor multimarca</strong>, seleccionamos el equipo idóneo para cada tipo de terreno y presupuesto, representando a los gigantes globales de la industria: <strong>Caterpillar, Zoomlion, HD Hyundai, Volvo, Case, Shantui, Hitachi, Develon y Rhino Equipment</strong>.
+                </p>
+            </div>
+            <div>
+                <img src="assets/catalog/Caterpillar Construction Machinery.webp" alt="Flota Maquinaria Pesada">
+            </div>
+        </div>
+
+        
+        <!-- Cifras de Solidez Corporativa -->
+        <div class="stats-counter-bar" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px; background:rgba(255,255,255,0.03); border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:35px 24px; margin:45px 0; text-align:center;">
+            <div>
+                <div style="font-family:'Montserrat',sans-serif; font-size:2.6rem; font-weight:900; color:var(--primary-gold, #f5a623);">+128</div>
+                <div style="color:#cbd5e1; font-weight:700; font-size:0.95rem; margin-top:4px;">Equipos en Portafolio</div>
+                <div style="color:#64748b; font-size:0.8rem;">Construcción, Minería y Agro</div>
+            </div>
+            <div>
+                <div style="font-family:'Montserrat',sans-serif; font-size:2.6rem; font-weight:900; color:var(--primary-gold, #f5a623);">0 HORAS</div>
+                <div style="color:#cbd5e1; font-weight:700; font-size:0.95rem; margin-top:4px;">Condición de Fábrica</div>
+                <div style="color:#64748b; font-size:0.8rem;">Garantía oficial y soporte directo</div>
+            </div>
+            <div>
+                <div style="font-family:'Montserrat',sans-serif; font-size:2.6rem; font-weight:900; color:var(--primary-gold, #f5a623);">32</div>
+                <div style="color:#cbd5e1; font-weight:700; font-size:0.95rem; margin-top:4px;">Departamentos de Colombia</div>
+                <div style="color:#64748b; font-size:0.8rem;">Logística y entrega en frente de obra</div>
+            </div>
+            <div>
+                <div style="font-family:'Montserrat',sans-serif; font-size:2.6rem; font-weight:900; color:var(--primary-gold, #f5a623);">24/7</div>
+                <div style="color:#cbd5e1; font-weight:700; font-size:0.95rem; margin-top:4px;">Soporte e Ingeniería</div>
+                <div style="color:#64748b; font-size:0.8rem;">Mantenimiento y repuestos genuinos</div>
+            </div>
+        </div>
+
+        <div class="values-grid">
+            <div class="value-card">
+                <i class="fas fa-certificate"></i>
+                <h3>Garantía de Fábrica</h3>
+                <p>Equipos 100% nuevos 0 horas con garantía directa de fabricante y certificación internacional.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-handshake"></i>
+                <h3>Leasing y Financiación</h3>
+                <p>Alianzas con la banca nacional y entidades financieras para estructurar esquemas de pago a la medida de tu flujo de caja.</p>
+            </div>
+            <div class="value-card">
+                <i class="fas fa-screwdriver-wrench"></i>
+                <h3>Taller y Repuestos 24/7</h3>
+                <p>Técnicos certificados, stock permanente de consumibles y líneas hidráulicas listas para instalación.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-multibrand-banner">
+            <div class="brand-carousel-track">
+                <!-- Primera Serie -->
+                    <img src="assets/brands/zoomlion.png" alt="Zoomlion">
+                    <img src="assets/brands/caterpillar.png" alt="Caterpillar">
+                    <img src="assets/brands/volvo.svg" alt="Volvo">
+                    <img src="assets/brands/hd-hyundai.png" alt="HD Hyundai">
+                    <img src="assets/brands/case.png" alt="CASE">
+                    <img src="assets/brands/shantui.png" alt="Shantui">
+                    <img src="assets/brands/hitachi.png" alt="Hitachi">
+                    <img src="assets/brands/develon.png" alt="Develon">
+                <!-- Segunda Serie (Clonada para Loop Infinito) -->
+                    <img src="assets/brands/zoomlion.png" alt="Zoomlion">
+                    <img src="assets/brands/caterpillar.png" alt="Caterpillar">
+                    <img src="assets/brands/volvo.svg" alt="Volvo">
+                    <img src="assets/brands/hd-hyundai.png" alt="HD Hyundai">
+                    <img src="assets/brands/case.png" alt="CASE">
+                    <img src="assets/brands/shantui.png" alt="Shantui">
+                    <img src="assets/brands/hitachi.png" alt="Hitachi">
+                    <img src="assets/brands/develon.png" alt="Develon">
+            </div>
+        </div>
+        <p>&copy; 2026 MÁQUINAS PRO » Todos los derechos reservados. Cali, Colombia.</p>
+    </footer>
+
+
+    <!-- Mobile Menu Script -->
+    <script>
+        function toggleMenu() {
+            document.getElementById('navLinks').classList.toggle('active');
+        }
+        
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
